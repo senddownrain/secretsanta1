@@ -1,24 +1,31 @@
 <template>
   <v-app>
-    <v-app-bar app color="primary" dark>
+    <v-app-bar app color="#E61D2B" dark>
+      
       <div class="d-flex align-center">
-        <h2>VueFire ToDo</h2>
+        <h2>Secret Santa 2021</h2>
+        <v-icon
+          dark
+          right
+        >
+          mdi-wizard-hat
+        </v-icon>
       </div>
       <v-spacer></v-spacer>
     </v-app-bar>
 
     <v-content>
-      <ToDoList />
+      <Santa />
     </v-content>
   </v-app>
 </template>
 
 <script>
-import ToDoList from "./components/ToDoList";
+import Santa from "./components/Santa";
 export default {
   name: "App",
   components: {
-    ToDoList,
+    Santa,
   },
   data: () => ({}),
 };

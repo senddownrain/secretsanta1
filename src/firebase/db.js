@@ -3,15 +3,13 @@ import "firebase/firestore";
 
 // Get a Firestore instance
 
-var firebaseConfig = {
-  apiKey: '<your-api-key>',
-  authDomain: '<your-auth-domain>',
-  databaseURL: '<your-database-url>',
-  projectId: '<your-cloud-firestore-project>',
-  storageBucket: '<your-storage-bucket>',
-  messagingSenderId: '<your-sender-id>',
-  appId: '<your-app-id>',
-  measurementId: '<your-measurement-id>'
+const firebaseConfig = {
+  apiKey: "AIzaSyAzE7O0hBqEl7PgzlUKL21sfuhjtlE1jMw",
+  authDomain: "secretsanta-2aa7f.firebaseapp.com",
+  projectId: "secretsanta-2aa7f",
+  storageBucket: "secretsanta-2aa7f.appspot.com",
+  messagingSenderId: "813142300525",
+  appId: "1:813142300525:web:ff6f4012ef8d873de82c64"
 };
 
 export const db = firebase.initializeApp(firebaseConfig).firestore();
